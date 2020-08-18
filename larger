@@ -1,0 +1,28 @@
+nt array[n],large=-1,larger=-1,largest=-1,c,d,e,i,j;
+  for(i=0;i<n;i++)
+  {
+      array[i]=i+1;
+  }
+  for(i=0;i<n;i++)
+  {
+    for(j=i+1;j<=n;j++)
+    {c=array[i]&array[j];  
+     d=array[i]|array[j];
+     e=array[i]^array[j];
+    
+      if(c<k && c>large)
+      {
+          large=c;
+      }
+      if(d<k && d>larger)
+      {
+          larger=d;
+      }
+      if(e<k && e>largest)
+      {
+          largest=e;
+      }
+  }
+  }
+  printf("%d\n%d\n%d",large,larger,largest);
+}
