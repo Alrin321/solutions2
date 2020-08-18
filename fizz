@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int i,N;
+    scanf("%d",&N);
+    for(i=0;i<=N;i++)
+    {
+        if((i%3==0&&i%5==0))//Number Divisible by 3 and 5
+        {
+            printf("FizzBuzz  ");
+            continue;
+        }
+        if(i%3==0)//Number Divisible by 3
+        {
+            printf("Fizz  ");
+            continue;
+        }
+        else if(i%5==0)//Number Divisible by 5
+            {
+                printf("Buzz  ");
+                continue;
+            }
+            else
+                printf("%d  ",i);
+    }
+   return 0;
+}
